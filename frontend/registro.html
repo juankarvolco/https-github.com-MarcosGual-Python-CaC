@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <lnk: rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Juguemos !</title>
+</head>
+<body>
+    <header>
+        <a id="arriba"><img src="img/logo.png" alt="logo"></a>
+        <h1>Juguemos !</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="juegos.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="registro.html">Registrate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <form action="" method="">
+                <fieldset>
+                    <legend>Datos personales</legend>
+                    <label for="nom">Nombre: *</label>
+                    <input type="text" name="nom" id="nom" maxlength="30" required> <br>
+                    <label for="ape">Apellido: *</label>
+                    <input type="text" name="ape" id="ape" maxlength="30" required> <br>
+                    <label for="edad">Edad:</label>
+                    <input type="number" name="edad" id="edad" min="0" max="120">
+                    <br><br>
+
+                    <label for="fecnac">Fecha de nacimiento</label>
+                    <input type="date" name="fecnac" id="fecnac">
+                    <label for="residencia">Lugar de residencia:</label>
+                    <select name="residencia" id="residencia">
+                        <option value="1">Capital Federal</option>
+                        <option value="2">Gran Buenos Aires</option>
+                        <option value="3">Interior del País</option>
+                    </select>
+                    <p>* Campos obligatorios</p>
+                </fieldset>
+                <fieldset>
+                    <legend>Datos de contacto e intereses</legend>
+                    <label for="correo">E-mail: *</label>
+                    <input type="email" name="correo" id="correo" placeholder="juan@example.com" required> <br>
+
+                    <label for="tel">Celular: *</label>
+                    <input type="number" name="tel" id="tel" required>
+                    <br>
+                    <label for="intereses">Tengo interés en:</label>
+                    <input type="checkbox" name="intereses" value="1"> Juegos
+                    <input type="checkbox" name="intereses" value="2"> Asesoramiento
+                    <input type="checkbox" name="intereses" value="3"> Lugares menos concurridos
+                    <input type="checkbox" name="intereses" value="4"> Formación de grupos
+                    <br>
+                    <label for="rb">¿Qúe considerás más importante a la hora de elegir?</label>
+                    <input type="radio" name="rb" value="1"> Calidad de los productos
+                    <input type="radio" name="rb" value="2"> Atención al cliente
+                    <input type="radio" name="rb" value="3"> Variedad de productos
+                    <input type="radio" name="rb" value="4"> Precios competitivos
+                    <br>
+                    <p>* Campos obligatorios</p>
+                </fieldset>
+                <input type="checkbox" name="condiciones" id="condiciones"> Acepto recibir ofertas a través del correo electrónico y/celular
+                <br><br>
+                <input type="submit" value="Enviar datos">
+                <input type="reset" value="Borrar datos">
+
+
+            </form>
+            
+        </section>
+        <h2>¿ Dónde estamos ?</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26261.314586276603!2d-58.42225863327615!3d-34.63792216824259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb1160a8e62b%3A0x42f33f7586b05be1!2sParque%20Patricios%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1693938768166!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <a href="mailto:juguemos@mail.com" target="_blank">
+            <img src="img/email.png" alt="logo email"></a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="img/facebook.png" alt="logo facebook"></a>
+        <a href="https://www.twitter.com/" target="_blank">
+            <img src="img/x.png" alt="logo x"></a>
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="img/instagram.png" alt="logo instagram"></a>
+        <br>
+        <a href="#arriba">🔼</a>
+    </footer>
+    
+</body>
+</html>
