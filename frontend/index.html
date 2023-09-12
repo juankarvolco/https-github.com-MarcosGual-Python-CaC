@@ -11,12 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <a id="arriba"><img src="img/logo.png" alt="logo" /></a>
-      <h1>Juguemos !</h1>
+      <div class="encabezado">
+        <a id="arriba"
+          ><img src="img/juego-de-mesa.png" alt="logo" width="80"
+        /></a>
+        <h1>
+          <span class="silaba silaba-1">Ju</span
+          ><span class="silaba silaba-2">gue</span
+          ><span class="silaba silaba-3">mos</span
+          ><span class="silaba silaba-4"> !</span>
+        </h1>
+      </div>
+
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
@@ -61,11 +71,14 @@
           </li>
         </ol>
       </section>
+      <a class="volver-arriba" href="#arriba"
+        ><img width="40" src="./img/flecha.png" alt=""
+      /></a>
       <section>
-        <h2>Juego destacado</h2>
+        <h2>Juegos Destacados</h2>
         <article>
           <a href="img/ajedrez.jpg" target="_blank" title="Ver más grande">
-            <img src="img/ajedrez.jpg" alt="ajedrez" />
+            <img width="300" src="img/chess1.png" alt="ajedrez" />
           </a>
           <h4>Juego de Ajedrez-Versión Kasparov</h4>
           <ul>
@@ -92,8 +105,6 @@
       <a href="https://www.instagram.com/" target="_blank">
         <img src="img/instagram.png" alt="logo instagram"
       /></a>
-      <br />
-      <a href="#arriba">🔼</a>
     </footer>
   </body>
 </html>

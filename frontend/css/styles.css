@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     scroll-behavior: smooth;
 }
 
@@ -15,11 +15,13 @@ body{
     --third-color: #9b97b2;
     --fourth-color: #D8A7CA;
     --fifth-color: #c7b8ea;
+    --sixth-color: #22c1c3;
 }
 
 header {
     font-size: 1.1rem;
-    background-color: var(--fourth-color);
+    background: rgb(216,167,202);
+    background: radial-gradient(circle, var(--fourth-color) 80%, var(--sixth-color) 100%);
     text-align: center;
     text-transform: capitalize;
     border-bottom: black 2px solid;
@@ -32,7 +34,8 @@ header {
 h1 {
     /* margin: 20px; */
     margin-bottom: 10px;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    /* text-transform: lowercase; */
     /* font-weight: bolder; */
 }
 
@@ -50,24 +53,41 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    padding: 10px;
+    padding: 12px;
     border-radius: 40%;
 }
 
 nav ul li a:hover {
     background-color: #73a6ad;
+    color: whitesmoke;
+    /* font-weight: bold; */
     /* transform: scale(); */
 }
 
-a{
+a {
     color: black;
 }
 
-a:visited{
+a:visited {
     color: black;
 }
 
-section{
+a.volver-arriba {
+    position: fixed;
+    left: 90vw;
+    top: 95vh;
+    display: inline;
+}
+
+div.encabezado{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+section {
     height: 100vh;
     border-bottom: black 2px solid;
     background-color: var(--fifth-color);
@@ -77,20 +97,79 @@ section{
     justify-content: space-around;
 }
 
-section.welcome{
+section.welcome {
     height: 80vh;
     background-color: var(--second-color);
 }
 
-article{
+article {
     height: 70%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    background-color: #22c1c3;
+}
+
+.silaba {
+    animation: color-animation 4s linear infinite;
+}
+
+.silaba-1 {
+    --color-1: var(--first-color);
+    --color-2: var(--second-color);
+    --color-3: whitesmoke;
+}
+
+.silaba-2 {
+    --color-1: var(--third-color);
+    --color-2: whitesmoke;
+    --color-3: var(--first-color);
+}
+
+.silaba-3 {
+    --color-1: whitesmoke;
+    --color-2: var(--fifth-color);
+    --color-3: var(--second-color);
+}
+
+.silaba-4 {
+    --color-1: var(--fifth-color);
+    --color-2: var(--first-color);
+    --color-3: var(--second-color);
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    32% {
+        color: var(--color-1)
+    }
+
+    33% {
+        color: var(--color-2)
+    }
+
+    65% {
+        color: var(--color-2)
+    }
+
+    66% {
+        color: var(--color-3)
+    }
+
+    99% {
+        color: var(--color-3)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
 }
